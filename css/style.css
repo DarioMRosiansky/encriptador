@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+    background-image: url("../Img/bckmetropolis.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: violet;
+}
+
+h1 {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: aliceblue;
+}
+
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.text-box2 {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
+}
+
+#input-text,
+#encrypted-text {
+    width: 80%;
+    border-radius: 4px;
+}
+
+#boton-encriptar,
+#boton-desencriptar,
+#boton-copiar {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #51215b;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+#boton-encriptar:hover,
+#boton-desencriptar:hover,
+#boton-copiar:hover{
+	cursor: progress;
+	transform: scale(1.05);
+    color: palevioletred;
+}
+
+
+/* Celular */
+
+@media screen and (max-width: 480px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
+
+/* tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
